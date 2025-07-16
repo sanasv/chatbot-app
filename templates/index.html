@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Upload - AI Career Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="upload-container">
+        <div class="upload-icon">📄</div>
+        
+        <h1>Upload Your CV</h1>
+        <p class="subtitle">Let our AI assistant help you optimize your career journey</p>
+        
+        {% if error %}
+        <div class="error-message">
+            ⚠️ {{ error }}
+        </div>
+        {% endif %}
+        
+        <form id="uploadForm" method="POST" enctype="multipart/form-data">
+            <div class="file-upload-wrapper">
+                <div class="file-upload-area" id="fileUploadArea">
+                    <input type="file" class="file-input" id="fileInput" name="cv" accept=".pdf,.doc,.docx,.txt" required>
+                    <div class="upload-text">📁 Choose file or drag & drop</div>
+                    <div class="upload-subtext">Upload your CV to get started</div>
+                    <div class="file-name" id="fileName"></div>
+                </div>
+            </div>
+            
+            <button type="submit" class="next-button" id="nextButton" disabled>
+                🚀 Analyze My CV
+            </button>
+        </form>
+        
+        <div class="supported-formats">
+            <p>Supported formats:</p>
+            <div class="format-tags">
+                <span class="format-tag">PDF</span>
+                <span class="format-tag">DOC</span>
+                <span class="format-tag">DOCX</span>
+                <span class="format-tag">TXT</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

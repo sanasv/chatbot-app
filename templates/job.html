@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description - AI Career Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="job-container">
+        <div class="job-icon">💼</div>
+        
+        <h1>Enter Job Description</h1>
+        <p class="subtitle">Paste the job description you're interested in</p>
+        
+        {% if error %}
+        <div class="error-message">
+            ⚠️ {{ error }}
+        </div>
+        {% endif %}
+        
+        <form method="POST" id="jobForm">
+            <div class="textarea-wrapper">
+                <textarea name="job" id="jobTextarea" required placeholder="Paste the job description here...
+
+Examples:
+• Full job posting from company website
+• LinkedIn job description
+• Job requirements and responsibilities
+• Company information and role details"></textarea>
+                <div class="char-count">
+                    <span id="charCount">0</span> characters
+                </div>
+            </div>
+            
+            <button type="submit" class="next-button" id="jobNextButton" disabled>
+                💬 Start Chat
+            </button>
+        </form>
+        
+        <div class="back-link">
+            <a href="/" class="back-button">← Upload Different CV</a>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Chat - AI Career Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-icon">🤖</div>
+            <div class="chat-title">
+                <h2>AI Career Assistant</h2>
+                <p>Ask me anything about your CV and the job!</p>
+            </div>
+        </div>
+        
+        <div id="chat-box" class="chat-box">
+            <div class="ai-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hello! I've analyzed your CV and the job description. I'm here to help you with:</p>
+                    <ul>
+                        <li>How well your CV matches the job requirements</li>
+                        <li>Skills gaps you might need to address</li>
+                        <li>Interview preparation questions</li>
+                        <li>How to improve your application</li>
+                        <li>Specific questions about the role</li>
+                    </ul>
+                    <p>What would you like to know?</p>
+                </div>
+            </div>
+        </div>
+        
+        <form id="chat-form" class="chat-form">
+            <div class="input-container">
+                <input type="text" name="question" id="questionInput" placeholder="Ask me anything about your CV and the job..." autocomplete="off" required>
+                <button type="submit" id="sendButton">
+                    <span class="send-text">Send</span>
+                    <span class="send-icon">📤</span>
+                </button>
+            </div>
+        </form>
+        
+        <div class="chat-actions">
+            <a href="/reset" class="reset-link">🔄 Start Over</a>
+            <a href="/reset_job" class="job-link">📝 Change Job</a>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

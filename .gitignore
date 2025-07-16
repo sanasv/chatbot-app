@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.local
+.env.production
+.env.*
+
+# MacOS
+.DS_Store
+
+# Docker
+*.log
+*.db
+
+# Kubernetes secrets
+secrets.yaml
+
+node_modules/
+dist/
+build/
