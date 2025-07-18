@@ -58,9 +58,6 @@ kubectl apply -f k8s/service.yaml
 ```
 
 ---
-
-## 🌐 Live Demo
-
 🔗 [Try the AI Job Assistant Chatbot here](https://chatbot-app-hwia.onrender.com)
 ---
 
