@@ -1,7 +1,3 @@
-Here's a polished and professional `README.md` for your **AI Job Assistant Chatbot** project:
-
----
-
 # 🧠 AI Job Assistant Chatbot
 
 An interactive AI-powered chatbot that helps users evaluate how well their CV matches a given job description, offering concise, tailored advice and feedback. The app uses LLMs (Groq API with LLaMA3), Flask, and a full React frontend, deployed via Docker and Kubernetes.
